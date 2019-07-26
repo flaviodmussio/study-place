@@ -1,0 +1,73 @@
+{
+	"variables": [],
+	"info": {
+		"name": "Place",
+		"_postman_id": "0fa00637-7074-0984-6bfc-ec813467ef5c",
+		"description": "",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "{{URL}}{{PORT}}api/Places",
+			"request": {
+				"url": "{{URL}}{{PORT}}api/Places",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"placeName\": \"teste\",\r\n  \"placeCity\": \"São Paulo\",\r\n  \"placeState\": \"SP\",\r\n  \"placeSlug\": \"/Teste\"\r\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "{{URL}}{{PORT}}api/Places",
+			"request": {
+				"url": "{{URL}}{{PORT}}api/Places",
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "{{URL}}{{PORT}}api/Places/3",
+			"request": {
+				"url": "{{URL}}{{PORT}}api/Places/3",
+				"method": "DELETE",
+				"header": [],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "{{URL}}{{PORT}}api/Places/3",
+			"request": {
+				"url": "{{URL}}{{PORT}}api/Places/3",
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"placeName\": \"string\",\r\n  \"placeCity\": \"string\",\r\n  \"placeState\": \"string\",\r\n  \"placeSlug\": \"string\"\r\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		}
+	]
+}
