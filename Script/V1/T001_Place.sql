@@ -1,0 +1,10 @@
+CREATE TABLE T001_Place(
+     ID int PRIMARY KEY IDENTITY,
+	 NOME nvarchar(150)NOT NULL,
+	 CIDADE nvarchar(150)NOT NULL,
+	 ESTADO nvarchar(100)NOT NULL,
+	 SLUG nvarchar(200)NOT NULL,
+	 DT_CRCO datetime2 NOT NULL,
+	 DT_ATLCO datetime2 NULL,
+	 IC_STATUS nvarchar(20)NOT NULL
+)
